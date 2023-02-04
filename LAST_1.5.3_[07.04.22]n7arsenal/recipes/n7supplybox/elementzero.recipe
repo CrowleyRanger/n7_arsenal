@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "corefragmentore", "count" : 5 },
+    { "item" : "money", "count" : 100 }
+  ],
+  "output" : {
+    "item" : "elementzero",
+    "count" : 1
+  },
+  "duration" : 1.2,
+  "groups" : [ "n7supplybox", "objects" ]
+}

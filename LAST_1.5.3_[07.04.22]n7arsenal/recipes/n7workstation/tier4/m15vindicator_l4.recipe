@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "m15vindicator_l3", "count" : 1 },
+{ "item" : "durasteelbar", "count" : 6 },
+{ "item" : "elementzero", "count" : 2 }
+],
+"output" : { "item" : "m15vindicator_l4", "count" : 1 },
+"groups" : [ "n7workstation", "n7workstationtier4" ],
+"duration" : 2
+}

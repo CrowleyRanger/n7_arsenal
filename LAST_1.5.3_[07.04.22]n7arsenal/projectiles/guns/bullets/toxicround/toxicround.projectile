@@ -1,0 +1,26 @@
+{
+  "projectileName" : "toxicround",
+  "physics" : "laser",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/n7a_toxicroundexplosion/n7a_toxicroundexplosion.config"
+    }
+  ],
+  "image" : "toxicround.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "poisonbow",
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "timeToLive" : 10,
+  "pointLight" : true,
+  "fullbright" : true,
+  "lightColor" : [48, 79, 13],
+  "statusEffects" : [
+    "weakpoison"
+  ],
+  "power" : 5.0,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "speed" : 100
+}

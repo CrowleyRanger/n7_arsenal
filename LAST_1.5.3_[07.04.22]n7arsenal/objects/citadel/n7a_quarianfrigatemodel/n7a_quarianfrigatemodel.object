@@ -1,0 +1,59 @@
+{
+  "objectName" : "n7a_quarianfrigatemodel",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Rare",
+  "description" : "A very detailed model of a quarian frigate!",
+  "shortdescription" : "Quarian Frigate Model",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 1000,
+  "printable" : false,
+  "lightColor" : [0, 60, 180],
+
+  "flickerPeriod" : 0.7,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.1,
+  "flickerIntensityVariance" : 0.0,
+
+  "apexDescription" : "A quarian starship, nice!",
+  "avianDescription" : "Is that a quarian starship?",
+  "floranDescription" : "What a nice ssssstarship design!",
+  "glitchDescription" : "A quarian frigate, very commom in the flotilla!",
+  "humanDescription" : "I think I've saw that ship when I was watching Fleet & Flotilla!",
+  "hylotlDescription" : "I think I've saw that ship when I was watching Fleet & Flotilla!",
+  "novakidDescription" : "A quarian starship, nice!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "n7a_quarianfrigatemodel.png:<color>.<frame>", "fullbright" : true }, { "image" : "n7a_quarianfrigatemodellit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.9,
+      
+      "lightPosition" : [6,1],
+      
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "n7a_quarianfrigatemodel.png:<color>.<frame>", "fullbright" : true }, { "image" : "n7a_quarianfrigatemodellit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.9,
+      
+      "lightPosition" : [6,1],
+      
+      "direction" : "right",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "corefragmentore", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "elementzero",
+    "count" : 1
+  },
+  "duration" : 0.1,
+  "groups" : [ "craftingfurnace3", "bars", "all" ]
+}

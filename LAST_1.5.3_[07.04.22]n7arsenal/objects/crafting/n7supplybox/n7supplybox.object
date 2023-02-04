@@ -1,0 +1,75 @@
+{
+  "objectName" : "n7supplybox",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Uncommon",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/n7supplybox.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "^orange;N7 Supply Box^white;",
+        "subtitle" : "^orange;>>> Connection with 'Systems Alliance Network' stablished!",
+        "icon" : {
+          "file" : "/interface/crafting/n7a_systemsallianceicon.png"
+        }
+      }
+	},
+    "filter" : [ "n7supplybox" ]
+	},
+  "price" : 100,
+  "printable" : false,
+  "lightColor" : [30, 30, 100],
+  
+  "radioMessagesOnPickup" : [ "pickupn7supplybox" ],
+  
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.1,
+  "flickerIntensityVariance" : 0.0,
+
+  "description" : "Supplies from Systems Alliance.",
+  "shortdescription" : "^orange;N7 Supply Box^white;",
+  "race" : "generic",
+  "category" : "crafting",
+
+  "apexDescription" : "The Systems Alliance, they'are amazing!",
+  "avianDescription" : "The Systems Alliance, they'are amazing!",
+  "floranDescription" : "The Systems Alliance, they'are amazing!",
+  "glitchDescription" : "The Systems Alliance, they'are amazing!",
+  "humanDescription" : "The Systems Alliance, they'are amazing!",
+  "hylotlDescription" : "The Systems Alliance, they'are amazing!",
+  "novakidDescription" : "The Systems Alliance, they'are amazing!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "n7supplyboxleft.png:<color>.<frame>", "fullbright" : true }, { "image" : "n7supplyboxlitleft.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.6,
+      
+      "lightPosition" : [0,1],
+      
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "n7supplyboxright.png:<color>.<frame>", "fullbright" : true }, { "image" : "n7supplyboxlitright.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.6,
+      
+      "lightPosition" : [0,1],
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

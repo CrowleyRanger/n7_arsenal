@@ -1,0 +1,12 @@
+{
+  "frameGrid" : {
+    "size" : [34, 32],
+    "dimensions" : [5, 1],
+    "names" : [
+      ["thermal.1", "incendiary.1", "cryo.1", "proton.1", "toxic.1" ]
+    ]
+  },
+
+  "aliases" : {
+  }
+}

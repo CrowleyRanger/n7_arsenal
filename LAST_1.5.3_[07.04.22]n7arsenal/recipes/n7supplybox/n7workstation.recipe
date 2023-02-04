@@ -1,0 +1,9 @@
+{
+"input" : [ 
+{ "item" : "ironbar", "count" : 5 },
+{ "item" : "money", "count" : 480 }
+],
+"output" : { "item" : "n7workstation", "count" : 1 },
+"groups" : [ "n7supplybox", "objects"],
+"duration" : 1.2
+}

@@ -1,0 +1,116 @@
+{
+  "itemName" : "m12locust_l3",
+  "price" : 300,
+  "inventoryIcon" : "m12locust_l3icon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "The Kassa Fabrications Model 12 Locust is a compact submachine gun developed for the Alliance but now favored by gang enforcers and hitmen.",
+  "shortdescription" : "M-12 Locust I",
+  "tooltipKind" : "gun",
+  "level" : 3,
+  "category" : "uniqueWeapon",
+  "itemTags" : ["weapon","ranged","pistol"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "/items/active/weapons/ranged/machinepistol/m12locust/m12locust.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash9.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.4, 0.125],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+        "partStates" : {
+          "middle" : {
+            "idle" : {
+              "properties" : {
+                "image" : "m12locust_l3fullbright.png:<frame><paletteSwaps>"
+              }
+            }
+          }
+        }
+      }}
+    },
+	"sounds" : {
+      "fire" : ["/sfx/gun/m12locust/m12locust.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 0, 120]
+      }
+    }
+  },
+
+  "baseOffset" : [0.4, 0.125],
+  "muzzleOffset" : [1.4, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.15,
+    "baseDps" : 10,
+    "energyUsage" : 25,
+    "inaccuracy" : 0.03,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "smgthermalbullet",
+    "projectileParameters" : {
+		"speed" : 150
+	},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.025,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  
+}

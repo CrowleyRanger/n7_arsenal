@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "tungstenbar", "count" : 3 },
+{ "item" : "elementzero", "count" : 2 },
+{ "item" : "money", "count" : 480 }
+],
+"output" : { "item" : "n7a_m6carnifex_l2", "count" : 1 },
+"groups" : [ "n7supplybox", "weapons", "all" ],
+"duration" : 1.2
+}

@@ -1,0 +1,161 @@
+{
+  "itemName" : "m300claymore_l4",
+  "price" : 400,
+  "inventoryIcon" : "m300claymore_l4icon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Very rare krogan shotgun. Deals high damage at short range; less effective at long range.",
+  "shortdescription" : "M-300 Claymore I",
+  "level" : 4,
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "tooltipKind" : "gun",
+  "itemTags" : ["weapon","ranged","shotgun"],
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "middle" : "/items/active/weapons/ranged/shotgun/m300claymore/m300claymore.png",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash11.png"
+  },
+  "animationCustom" : {
+ 	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.2, 0.0],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+          "partStates" : {
+            "ammoType" : {
+              "1" : {
+                "properties" : {
+                  "image" : "m300claymore_l4fullbright.png:thermal.<frame><paletteSwaps>"
+                }
+              },
+              "2" : {
+                "properties" : {
+                  "image" : "m300claymore_l4fullbright.png:incendiary.<frame><paletteSwaps>"
+                }
+              },
+              "3" : {
+                "properties" : {
+                  "image" : "m300claymore_l4fullbright.png:cryo.<frame><paletteSwaps>"
+                }
+              },
+              "4" : {
+                "properties" : {
+                  "image" : "m300claymore_l4fullbright.png:proton.<frame><paletteSwaps>"
+                }
+              },
+              "5" : {
+                "properties" : {
+                  "image" : "m300claymore_l4fullbright.png:toxic.<frame><paletteSwaps>"
+                }
+              }
+            }
+          }
+      }}
+    },
+    "sounds" : {
+      "fire" : ["/sfx/gun/m300claymore/m300claymore.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [200, 80, 0]
+      }
+    }
+  },
+
+  "baseOffset" : [0.2, 0.0],
+  "muzzleOffset" : [2.5, -0.1],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 2,
+    "baseDps" : 13,
+    "energyUsage" : 40,
+    "projectileCount" : 5,
+    "inaccuracy" : 0.14,
+    "fireType" : "auto",
+
+    "projectileType" : "thermalbullet",
+    "projectileParameters" : {
+      "knockback" : 50
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 10,
+		"weaponOffset" : [-0.3, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.3,
+        "armRotation" : 8,
+        "weaponRotation" : 10,
+		"weaponOffset" : [-0.3, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      }
+    }
+  },
+
+  "altAbilityType" : "omniammo",
+  
+  // ADDITIONAL ABILITY INSTANCES //
+  
+  "altAbility" : {
+    "stances" : {
+      "idle" : {
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      },
+      "switch" : {
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

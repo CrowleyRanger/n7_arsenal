@@ -1,0 +1,8 @@
+{
+"input" : [  
+{ "item" : "money", "count" : 1000 }	
+],
+"output" : { "item" : "afterlife2", "count" : 1 },
+"groups" : [ "citadelshop", "objects" ],
+"duration" : 1.2
+}

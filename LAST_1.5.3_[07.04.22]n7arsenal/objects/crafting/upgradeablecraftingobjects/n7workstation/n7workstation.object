@@ -1,0 +1,286 @@
+{
+  "objectName" : "n7workstation",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Rare",
+  "race" : "generic",
+  "category" : "crafting",
+
+  "radioMessagesOnPickup" : [ "pickupn7workstation" ],
+  //this is handled by the lua
+  "breakDropOptions" : [],
+
+  "price" : 35,
+  "printable" : false,
+  
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
+
+  "animation" : "n7workstation.animation",
+  "animationPosition" : [0, 20],
+  
+  "inventoryIcon" : "n7workstationicon.png",
+  "placementImage" : "n7workstation.png:default.default",
+  "placementImagePosition" : [-32, -1],    
+
+  "description" : "The N7 Workstation is used to upgrade various weapons from Milky Way Galaxy.",
+  "shortdescription" : "^orange;N7 Workstation^white;",
+
+  "apexDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+  "avianDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+  "floranDescription" : "I can ussse materialssss I've found here to upgrade my eezzzo based weapons.",
+  "glitchDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+  "humanDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+  "hylotlDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+  "novakidDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 5,
+
+  "upgradeStages" : [
+    {
+      "animationState" : "n7workstation",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "n7workstationicon.png",
+        "placementImage" : "n7workstation.png:default.default",
+        "placementImagePosition" : [-32, -1],
+		
+        "description" : "The N7 Workstation is used to upgrade various weapons from Milky Way Galaxy.",
+        "shortdescription" : "^orange;N7 Workstation^white;",
+
+        "apexDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"avianDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"floranDescription" : "I can ussse materialssss I've found here to upgrade my eezzzo based weapons.",
+		"glitchDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"humanDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"hylotlDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"novakidDescription" : "I can use materials I've found here to upgrade my eezo based weapons."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/n7workstation.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " N7 Workstation",
+            "subtitle" : "^blue;Powerful weapons from Milky Way Galaxy!^white;",
+            "icon" : {
+              "file" : "/interface/crafting/n7a_n7icon.png"
+            }
+          }
+        },
+
+        "filter" : [ "n7workstation" ],
+        "craftingSound" : "/sfx/interface/crafting_tech1.ogg",
+        "upgradeMaterials" : [
+          { "item" : "tungstenbar", "count" : 6 },
+          { "item" : "glass", "count" : 10 },
+          { "item" : "silverbar", "count" : 5 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "n7workstation2",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "n7workstation2icon.png",
+        "placementImage" : "n7workstation2.png:default.default",
+        "placementImagePosition" : [-32, -1],    
+
+        "description" : "The engineer's table is used to upgrade various crafting stations.",
+        "shortdescription" : "^orange;N7 Workstation II^white;",
+
+        "apexDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"avianDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"floranDescription" : "I can ussse materialssss I've found here to upgrade my eezzzo based weapons.",
+		"glitchDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"humanDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"hylotlDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"novakidDescription" : "I can use materials I've found here to upgrade my eezo based weapons."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/n7workstation2.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : "N7 Workstation II",
+            "subtitle" : "^blue;Powerful weapons from Milky Way Galaxy!^white;",
+            "icon" : {
+              "file" : "/interface/crafting/n7a_n7icon.png"
+            }
+          }
+        },
+        "filter" : [ "n7workstation", "n7workstation2" ],
+        "craftingSound" : "/sfx/interface/crafting_tech1.ogg",
+        "upgradeMaterials" : [
+          { "item" : "durasteelbar", "count" : 6 },
+          { "item" : "battery", "count" : 1 },
+          { "item" : "siliconboard", "count" : 5 },
+          { "item" : "wire", "count" : 10 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "n7workstation3",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "n7workstation3icon.png",
+        "placementImage" : "n7workstation3.png:default.default",
+        "placementImagePosition" : [-32, -1],    
+
+        "description" : "The architect's table is used to upgrade various crafting stations.",
+        "shortdescription" : "^orange;N7 Workstation III^white;",
+
+        "apexDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"avianDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"floranDescription" : "I can ussse materialssss I've found here to upgrade my eezzzo based weapons.",
+		"glitchDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"humanDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"hylotlDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"novakidDescription" : "I can use materials I've found here to upgrade my eezo based weapons."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/n7workstation3.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : "N7 Workstation III",
+            "subtitle" : "^blue;Powerful weapons from Milky Way Galaxy!^white;",
+            "icon" : {
+              "file" : "/interface/crafting/n7a_n7icon.png"
+            }
+          }
+        },
+        "filter" : [ "n7workstation", "n7workstation2", "n7workstation3" ],
+        "craftingSound" : "/sfx/interface/crafting_tech1.ogg",
+        "upgradeMaterials" : [
+          { "item" : "refinedaegisalt", "count" : 6 },
+          { "item" : "battery", "count" : 1 },
+          { "item" : "siliconboard", "count" : 5 },
+          { "item" : "wire", "count" : 5 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+	
+	{
+      "animationState" : "n7workstation4",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "n7workstation4icon.png",
+        "placementImage" : "n7workstation4.png:default.default",
+        "placementImagePosition" : [-32, -1],    
+
+        "description" : "The architect's table is used to upgrade various crafting stations.",
+        "shortdescription" : "^orange;N7 Workstation IV^white;",
+
+        "apexDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"avianDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"floranDescription" : "I can ussse materialssss I've found here to upgrade my eezzzo based weapons.",
+		"glitchDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"humanDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"hylotlDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"novakidDescription" : "I can use materials I've found here to upgrade my eezo based weapons."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/n7workstation4.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : "N7 Workstation IV",
+            "subtitle" : "^blue;Powerful weapons from Milky Way Galaxy!^white;",
+            "icon" : {
+              "file" : "/interface/crafting/n7a_n7icon.png"
+            }
+          }
+        },
+        "filter" : [ "n7workstation", "n7workstation2", "n7workstation3", "n7workstation4" ],
+        "craftingSound" : "/sfx/interface/crafting_tech1.ogg",
+        "upgradeMaterials" : [
+          { "item" : "solariumstar", "count" : 6 },
+          { "item" : "battery", "count" : 1 },
+          { "item" : "siliconboard", "count" : 5 },
+          { "item" : "wire", "count" : 5 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+	  
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+	
+	{
+      "animationState" : "n7workstation5",
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "n7workstation5icon.png",
+        "placementImage" : "n7workstation5.png:default.default",
+        "placementImagePosition" : [-32, -1],    
+
+        "description" : "The architect's table is used to upgrade various crafting stations.",
+        "shortdescription" : "^orange;N7 Workstation V^white;",
+
+        "apexDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"avianDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"floranDescription" : "I can ussse materialssss I've found here to upgrade my eezzzo based weapons.",
+		"glitchDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"humanDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"hylotlDescription" : "I can use materials I've found here to upgrade my eezo based weapons.",
+		"novakidDescription" : "I can use materials I've found here to upgrade my eezo based weapons."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/n7workstation5.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : "N7 Workstation V",
+            "subtitle" : "^blue;Powerful weapons from Milky Way Galaxy!^white;",
+            "icon" : {
+              "file" : "/interface/crafting/n7a_n7icon.png"
+            }
+          }
+        },
+        "filter" : [ "n7workstation", "n7workstation2", "n7workstation3", "n7workstation4", "n7workstation5" ],
+        "craftingSound" : "/sfx/interface/crafting_tech1.ogg"
+      },
+
+      "learnBlueprintsOnPickup" : []
+    }
+	
+  ],
+
+  "orientations" : [
+    {
+      "image" : "n7workstation.png:<color>.<frame>",
+      "imagePosition" : [-32, 0],    
+      "direction" : "left",
+      "flipImages" : true,
+      "spaces" : [ [-2,0], [-1,0], [0,0], [1,0], [-2,1], [-1,1], [0,1], [1,1], [-2,2], [-1,2], [0,2], [1,2], [-2,3], [-1,3], [0,3], [1,3], [-2,4], [-1,4], [0,4], [1,4] ],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "n7workstation.png:<color>.<frame>",
+      "imagePosition" : [-32, 0],
+      "direction" : "right",
+      "spaces" : [ [-2,0], [-1,0], [0,0], [1,0], [-2,1], [-1,1], [0,1], [1,1], [-2,2], [-1,2], [0,2], [1,2], [-2,3], [-1,3], [0,3], [1,3], [-2,4], [-1,4], [0,4], [1,4] ],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/pickupn7supplybox",
+    "value": {
+      "type": "tutorial",
+      "text": "Receiving a signal from the Systems Alliance Network, they're sending us some military supplies. You can now access the N7 Supply Box and request some weapons!"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/pickupn7workstation",
+    "value": {
+      "type": "tutorial",
+      "text": "You can now upgrade your Element Zero based weapons at the N7 Workstation!"
+    }
+  }
+]

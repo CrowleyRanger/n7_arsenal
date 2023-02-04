@@ -1,0 +1,162 @@
+{
+  "itemName" : "m98widow_l5",
+  "price" : 500,
+  "inventoryIcon" : "m98widow_l5icon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A heavy and formidable single-shot sniper rifle originally designed for the use against armored vehicles.",
+  "shortdescription" : "M-98 Widow II",
+  "level" : 5,
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "itemTags" : ["weapon","ranged","rifle"],
+  "twoHanded" : true,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "/items/active/weapons/ranged/sniperrifle/m98widow/m98widow.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash7.png"
+  },
+  "animationCustom" : {
+ 	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [1.5, 0.4],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+          "partStates" : {
+            "ammoType" : {
+              "1" : {
+                "properties" : {
+                  "image" : "m98widow_l5fullbright.png:thermal.<frame><paletteSwaps>"
+                }
+              },
+              "2" : {
+                "properties" : {
+                  "image" : "m98widow_l5fullbright.png:incendiary.<frame><paletteSwaps>"
+                }
+              },
+              "3" : {
+                "properties" : {
+                  "image" : "m98widow_l5fullbright.png:cryo.<frame><paletteSwaps>"
+                }
+              },
+              "4" : {
+                "properties" : {
+                  "image" : "m98widow_l5fullbright.png:proton.<frame><paletteSwaps>"
+                }
+              },
+              "5" : {
+                "properties" : {
+                  "image" : "m98widow_l5fullbright.png:toxic.<frame><paletteSwaps>"
+                }
+              }
+            }
+          }
+      }}
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/m98widow/m98widow.ogg" ]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 50, 120]
+      }
+    }
+  },
+
+  "baseOffset" : [1.5, 0.4],
+  "muzzleOffset" : [2.9, 0.065],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 3,
+    "baseDps" : 12,
+    "energyUsage" : 40,
+    "inaccuracy" : 0,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "sniperthermalbullet",
+    "projectileParameters" : {
+      "knockback" : 40,
+	  "speed" : 300
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+		"weaponOffset" : [-0.5, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.5,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+		"weaponOffset" : [-0.5, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbilityType" : "omniammo",
+  
+  // ADDITIONAL ABILITY INSTANCES // SNIPER THERMAL BULLET //
+  
+  "altAbility" : {
+    "ammoTypes" : [
+      {
+        "projectileType" : "n7a_sniperthermalbullet"
+      },
+      {
+        "projectileType" : "n7a_sniperincendiaryround"
+      },
+      {
+        "projectileType" : "n7a_snipercryoround"
+      },
+      {
+        "projectileType" : "n7a_sniperprotonround"
+      },
+      {
+        "projectileType" : "n7a_snipertoxicround"
+      }
+    ]
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

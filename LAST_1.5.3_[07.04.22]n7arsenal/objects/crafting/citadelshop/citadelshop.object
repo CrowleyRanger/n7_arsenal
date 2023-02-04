@@ -1,0 +1,74 @@
+{
+  "objectName" : "citadelshop",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Rare",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/n7a_citadelshop.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Citadel Shop",
+        "subtitle" : "Products directly from the Citadel storages!",
+        "icon" : {
+          "file" : "/interface/crafting/n7a_citadelshopicon.png"
+        }
+      }
+	},
+    "filter" : [ "citadelshop" ]
+	},
+  "price" : 200,
+  "printable" : false,
+  "lightColor" : [100, 60, 0],
+  
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.1,
+  "flickerIntensityVariance" : 0.0,
+
+  "description" : "Products directly from the Citadel storages!",
+  "shortdescription" : "^orange;Citadel Shop^white;",
+  "race" : "generic",
+  "category" : "crafting",
+
+  "apexDescription" : "Hey! Maybe we may buy some souvenir from Citadel?",
+  "avianDescription" : "Hey! Maybe we may buy some souvenir from Citadel?",
+  "floranDescription" : "Hey! Maybe we may buy some souvenir from Citadel?",
+  "glitchDescription" : "Hey! Maybe we may buy some souvenir from Citadel?",
+  "humanDescription" : "Hey! Maybe we may buy some souvenir from Citadel?",
+  "hylotlDescription" : "Hey! Maybe we may buy some souvenir from Citadel?",
+  "novakidDescription" : "Hey! Maybe we may buy some souvenir from Citadel?",
+
+  "inventoryIcon" : "citadelshopicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "citadelshop.png:<color>.<frame>", "fullbright" : true }, { "image" : "citadelshoplit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      
+      "lightPosition" : [0,1],
+      
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "citadelshop.png:<color>.<frame>", "fullbright" : true }, { "image" : "citadelshoplit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      
+      "lightPosition" : [0,1],
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

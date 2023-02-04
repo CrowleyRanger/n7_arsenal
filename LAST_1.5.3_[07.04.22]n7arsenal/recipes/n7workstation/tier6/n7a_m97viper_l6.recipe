@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "n7a_m97viper_l5", "count" : 1 },
+{ "item" : "solariumstar", "count" : 6 },
+{ "item" : "elementzero", "count" : 2 }
+],
+"output" : { "item" : "n7a_m97viper_l6", "count" : 1 },
+"groups" : [ "n7workstation", "n7workstationtier6" ],
+"duration" : 2
+}

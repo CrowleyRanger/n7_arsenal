@@ -1,0 +1,10 @@
+{
+  "itemName" : "elementzero",
+  "price" : 120,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "elementzero.png",
+  "description" : "Also known as 'eezo', when subjected to an electrical current, releases dark energy.",
+  "shortdescription" : "^blue;Element Zero^white;",
+  "itemTags" : [ "reagent" ]
+}

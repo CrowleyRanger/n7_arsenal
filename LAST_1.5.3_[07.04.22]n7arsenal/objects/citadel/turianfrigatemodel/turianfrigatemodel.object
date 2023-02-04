@@ -1,0 +1,59 @@
+{
+  "objectName" : "turianfrigatemodel",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Rare",
+  "description" : "A very detailed model of a turian frigate!",
+  "shortdescription" : "Turian Frigate Model",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 1000,
+  "printable" : false,
+  "lightColor" : [0, 80, 180],
+
+  "flickerPeriod" : 0.85,
+  "flickerMinIntensity" : 0.6,
+  "flickerMaxIntensity" : 0.8,
+  "flickerPeriodVariance" : 0.1,
+  "flickerIntensityVariance" : 0.0,
+
+  "apexDescription" : "A turian starship, nice!",
+  "avianDescription" : "Is that a turian starship?",
+  "floranDescription" : "What a nice ssssstarship design!",
+  "glitchDescription" : "Turian Frigate, a very effective starship!",
+  "humanDescription" : "A turian frigate, nice!",
+  "hylotlDescription" : "A turian starship, nice!",
+  "novakidDescription" : "A turian starship, nice!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "turianfrigatemodel.png:<color>.<frame>", "fullbright" : true }, { "image" : "turianfrigatemodellit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.8,
+      
+      "lightPosition" : [0,1],
+      
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "turianfrigatemodel.png:<color>.<frame>", "fullbright" : true }, { "image" : "turianfrigatemodellit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.8,
+      
+      "lightPosition" : [0,1],
+      
+      "direction" : "right",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

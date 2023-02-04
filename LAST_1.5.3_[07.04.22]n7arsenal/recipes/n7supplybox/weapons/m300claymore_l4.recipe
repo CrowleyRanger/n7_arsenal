@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "durasteelbar", "count" : 6 },
+{ "item" : "elementzero", "count" : 2 },
+{ "item" : "money", "count" : 1080 }
+],
+"output" : { "item" : "m300claymore_l4", "count" : 1 },
+"groups" : [ "n7supplybox", "weapons", "all" ],
+"duration" : 1.2
+}

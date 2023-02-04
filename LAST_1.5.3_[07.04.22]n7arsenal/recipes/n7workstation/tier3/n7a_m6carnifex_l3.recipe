@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "n7a_m6carnifex_l2", "count" : 1 },
+{ "item" : "titaniumbar", "count" : 3 },
+{ "item" : "elementzero", "count" : 1 }
+],
+"output" : { "item" : "n7a_m6carnifex_l3", "count" : 1 },
+"groups" : [ "n7workstation", "n7workstationtier3" ],
+"duration" : 2
+}

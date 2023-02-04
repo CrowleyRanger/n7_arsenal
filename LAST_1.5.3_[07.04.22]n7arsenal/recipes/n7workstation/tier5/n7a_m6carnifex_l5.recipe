@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "n7a_m6carnifex_l4", "count" : 1 },
+{ "item" : "refinedaegisalt", "count" : 3 },
+{ "item" : "elementzero", "count" : 1 }
+],
+"output" : { "item" : "n7a_m6carnifex_l5", "count" : 1 },
+"groups" : [ "n7workstation", "n7workstationtier5" ],
+"duration" : 2
+}

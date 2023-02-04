@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "m4shuriken_l5", "count" : 1 },
+{ "item" : "solariumstar", "count" : 3 },
+{ "item" : "elementzero", "count" : 2 }
+],
+"output" : { "item" : "m4shuriken_l6", "count" : 1 },
+"groups" : [ "n7workstation", "n7workstationtier6" ],
+"duration" : 2
+}

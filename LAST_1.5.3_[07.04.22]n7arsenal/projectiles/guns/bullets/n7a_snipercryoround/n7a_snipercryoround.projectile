@@ -1,0 +1,27 @@
+{
+  "projectileName" : "n7a_snipercryoround",
+  "physics" : "laser",
+  "image" : "n7a_snipercryoround.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "emitters" : [ "icetrail" ],
+  "timeToLive" : 10,
+  "fullbright" : true,
+  "pointLight" : true,
+  "lightColor" : [13, 70, 79],
+  "power" : 5.0,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "speed" : 100,
+  "damageKind" : "icebow",
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "statusEffects" : [
+    "frostslow"
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/n7a_cryoroundexplosion/n7a_cryoroundexplosion.config"
+    }
+  ]
+}

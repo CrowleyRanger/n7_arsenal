@@ -1,0 +1,8 @@
+{
+"input" : [  
+{ "item" : "money", "count" : 1080 }	
+],
+"output" : { "item" : "turianfrigatemodel", "count" : 1 },
+"groups" : [ "citadelshop", "objects" ],
+"duration" : 1.2
+}

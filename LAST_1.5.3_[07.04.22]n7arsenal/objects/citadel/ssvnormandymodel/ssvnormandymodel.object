@@ -1,0 +1,59 @@
+{
+  "objectName" : "ssvnormandymodel",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Rare",
+  "description" : "A very detailed model of the SSV Normandy SR-1!",
+  "shortdescription" : "SSV Normandy Model",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 1000,
+  "printable" : false,
+  "lightColor" : [0, 60, 180],
+
+  "flickerPeriod" : 0.8,
+  "flickerMinIntensity" : 0.7,
+  "flickerMaxIntensity" : 0.8,
+  "flickerPeriodVariance" : 0.1,
+  "flickerIntensityVariance" : 0.0,
+
+  "apexDescription" : "Was that the starship commanded by Shepard?",
+  "avianDescription" : "Was that the starship commanded by Shepard?",
+  "floranDescription" : "What a nice ssssstarship design, Nor... Normandy?",
+  "glitchDescription" : "SSV Normandy SR-1, the legendary starship commanded by Commander Shepard!",
+  "humanDescription" : "Wow! The first Normandy! It gives me chills!",
+  "hylotlDescription" : "Wow! The first Normandy! It gives me chills!",
+  "novakidDescription" : "Wow! The first Normandy! It gives me chills!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "ssvnormandymodel.png:<color>.<frame>", "fullbright" : true }, { "image" : "ssvnormandymodellit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.8,
+      
+      "lightPosition" : [6,1],
+      
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "ssvnormandymodel.png:<color>.<frame>", "fullbright" : true }, { "image" : "ssvnormandymodellit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.8,
+      
+      "lightPosition" : [6,1],
+      
+      "direction" : "right",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

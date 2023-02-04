@@ -1,0 +1,118 @@
+{
+  "itemName" : "m25hornet_l3",
+  "price" : 300,
+  "inventoryIcon" : "m25hornet_l3icon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "The M-25 Hornet is a heavy submachine gun that fires three-round bursts. Originally created in the Milky Way by the paramilitary group Cerberus.",
+  "shortdescription" : "M-25 Hornet I",
+  "tooltipKind" : "gun",
+  "level" : 3,
+  "category" : "uniqueWeapon",
+  "itemTags" : ["weapon","ranged","pistol"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "/items/active/weapons/ranged/machinepistol/m25hornet/m25hornet.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash9.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.5, -0.05],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+        "partStates" : {
+          "middle" : {
+            "idle" : {
+              "properties" : {
+                "image" : "m25hornet_l3fullbright.png:<frame><paletteSwaps>"
+              }
+            }
+          }
+        }
+      }}
+    },
+	"sounds" : {
+      "fire" : ["/sfx/gun/m25hornet/m25hornet.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 0, 120]
+      }
+    }
+  },
+
+  "baseOffset" : [0.5, -0.05],
+  "muzzleOffset" : [1.2, 0.3],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.2,
+    "baseDps" : 10,
+    "energyUsage" : 15,
+	"projectileCount" : 1,
+    "inaccuracy" : 0.05,
+
+	"burstCount" : 3,
+	"burstTime" : 0.05,
+    "fireType" : "burst",
+
+    "projectileType" : "smgthermalbullet",
+    "projectileParameters" : {
+		"speed" : 150
+	},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.025,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  
+}

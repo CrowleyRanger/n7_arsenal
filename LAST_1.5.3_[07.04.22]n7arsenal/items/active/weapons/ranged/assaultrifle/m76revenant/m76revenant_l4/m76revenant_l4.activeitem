@@ -1,0 +1,142 @@
+{
+  "itemName" : "m76revenant_l4",
+  "price" : 400,
+  "inventoryIcon" : "m76revenant_l4icon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "The M-76 Revenant unleashes a storm of deadly high-velocity slugs. It has low accuracy but a high thermal clip capacity.",
+  "shortdescription" : "M-76 Revenant I",
+  "level" : 4,
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "twoHanded" : true,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : { 
+	"butt" : "",
+    "middle" : "/items/active/weapons/ranged/assaultrifle/m76revenant/m76revenant.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash6.png"
+  },
+  "animationCustom" : { 
+	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.7, 0.3],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+          "partStates" : {
+            "ammoType" : {
+              "1" : {
+                "properties" : {
+                  "image" : "m76revenant_l4fullbright.png:thermal.<frame><paletteSwaps>"
+                }
+              },
+              "2" : {
+                "properties" : {
+                  "image" : "m76revenant_l4fullbright.png:incendiary.<frame><paletteSwaps>"
+                }
+              },
+              "3" : {
+                "properties" : {
+                  "image" : "m76revenant_l4fullbright.png:cryo.<frame><paletteSwaps>"
+                }
+              },
+              "4" : {
+                "properties" : {
+                  "image" : "m76revenant_l4fullbright.png:proton.<frame><paletteSwaps>"
+                }
+              },
+              "5" : {
+                "properties" : {
+                  "image" : "m76revenant_l4fullbright.png:toxic.<frame><paletteSwaps>"
+                }
+              }
+            }
+          }
+      }}
+    },
+	"sounds" : {
+      "fire" : ["/sfx/gun/m76revenant/m76revenant.ogg"]
+    },
+	"lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 50, 180]
+      }
+    }
+  },
+  
+  "baseOffset" : [0.7, 0.3],
+  "muzzleOffset" : [2.3, 0],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.05,
+    "baseDps" : 37.5,
+    "energyUsage" : 130,
+	"projectileCount" : 1,
+    "inaccuracy" : 0.05,
+	
+    "fireType" : "auto",
+
+    "projectileType" : "thermalbullet",
+    "projectileParameters" : {
+		"speed" : 200,
+		"knockback" : 5
+	},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+		"weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+		"weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbilityType" : "omniammo",
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  
+}

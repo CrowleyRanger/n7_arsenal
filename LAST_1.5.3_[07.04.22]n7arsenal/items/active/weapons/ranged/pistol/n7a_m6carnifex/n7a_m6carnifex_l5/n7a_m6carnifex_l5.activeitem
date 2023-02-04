@@ -1,0 +1,114 @@
+{
+  "itemName" : "n7a_m6carnifex_l5",
+  "price" : 400,
+  "inventoryIcon" : "n7a_m6carnifex_l5icon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "The Carnifex is a favored sidearm of mercenary leaders and Eclipse mercenary tech specialists.",
+  "shortdescription" : "M-6 Carnifex IV",
+  "tooltipKind" : "gun",
+  "level" : 5,
+  "category" : "uniqueWeapon",
+  "itemTags" : ["weapon","ranged","pistol"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "/items/active/weapons/ranged/pistol/n7a_m6carnifex/n7a_m6carnifex.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash10.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.6, 0.125],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+        "partStates" : {
+          "middle" : {
+            "idle" : {
+              "properties" : {
+                "image" : "/items/active/weapons/ranged/pistol/n7a_m6carnifex/n7a_m6carnifex_l5/n7a_m6carnifex_l5fullbright.png:<frame><paletteSwaps>"
+              }
+            }
+          }
+        }
+      }}
+    },
+	"sounds" : {
+      "fire" : ["/sfx/gun/n7a_m6carnifex/n7a_m6carnifex.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 0, 120]
+      }
+    }
+  },
+
+  "baseOffset" : [0.6, 0.125],
+  "muzzleOffset" : [1.1, 0.2],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.7,
+    "baseDps" : 8,
+    "energyUsage" : 50,
+    "inaccuracy" : 0,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "thermalbullet",
+    "projectileParameters" : {},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.025,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  
+}

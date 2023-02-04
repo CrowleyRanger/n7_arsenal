@@ -1,0 +1,50 @@
+{
+  "objectName" : "havarlplant",
+  "colonyTags" : ["nature","pretty"],
+  "rarity" : "Rare",
+  "description" : "From Havarl, ancestral home of the angara lush jungle planet.",
+  "shortdescription" : "Havarl Plant",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 60,
+  "lightColor" : [20, 0, 20],
+
+  "apexDescription" : "This plant is beautiful!",
+  "avianDescription" : "A strange plant.",
+  "floranDescription" : "Floran likes thissss  plant!",
+  "glitchDescription" : "A very nice natural structure.",
+  "humanDescription" : "This plant is cool!",
+  "hylotlDescription" : "This plant is too colorful, looks toxic.",
+  "novakidDescription" : "A pretty natural thing.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "havarlplant.png:<color>", "fullbright" : true }, { "image" : "havarlplantlit.png:<color>" } ],
+      "flipImages" : true,
+      "direction" : "left",
+      
+      "lightPosition" : [-1, 1],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "havarlplant.png:<color>", "fullbright" : true }, { "image" : "havarlplantlit.png:<color>" } ],
+      "direction" : "right",
+      
+      "lightPosition" : [0, 1],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

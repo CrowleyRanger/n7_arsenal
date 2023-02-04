@@ -1,0 +1,162 @@
+{
+  "itemName" : "m27scimitar_l3",
+  "price" : 300,
+  "inventoryIcon" : "m27scimitar_l3icon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "Manufactured by Ariake Technologies, the Scimitar features twin mass effect generators, giving it a more rapid rate of fire than a traditional shotgun.",
+  "shortdescription" : "M-27 Scimitar III",
+  "level" : 3,
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "tooltipKind" : "gun",
+  "itemTags" : ["weapon","ranged","shotgun"],
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "middle" : "/items/active/weapons/ranged/shotgun/m27scimitar/m27scimitar.png",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash5.png"
+  },
+  "animationCustom" : {
+ 	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.1, 0.0],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+          "partStates" : {
+            "ammoType" : {
+              "1" : {
+                "properties" : {
+                  "image" : "m27scimitar_l3fullbright.png:thermal.<frame><paletteSwaps>"
+                }
+              },
+              "2" : {
+                "properties" : {
+                  "image" : "m27scimitar_l3fullbright.png:incendiary.<frame><paletteSwaps>"
+                }
+              },
+              "3" : {
+                "properties" : {
+                  "image" : "m27scimitar_l3fullbright.png:cryo.<frame><paletteSwaps>"
+                }
+              },
+              "4" : {
+                "properties" : {
+                  "image" : "m27scimitar_l3fullbright.png:proton.<frame><paletteSwaps>"
+                }
+              },
+              "5" : {
+                "properties" : {
+                  "image" : "m27scimitar_l3fullbright.png:toxic.<frame><paletteSwaps>"
+                }
+              }
+            }
+          }
+      }}
+    },
+    "sounds" : {
+      "fire" : ["/sfx/gun/m27scimitar/m27scimitar.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 100, 220]
+      }
+    }
+  },
+
+  "baseOffset" : [0.1, 0.0],
+  "muzzleOffset" : [1.7, 0.06],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.2,
+    "baseDps" : 10,
+    "energyUsage" : 30,
+    "projectileCount" : 5,
+    "inaccuracy" : 0.12,
+    "fireType" : "auto",
+
+    "projectileType" : "thermalbullet",
+    "projectileParameters" : {
+      "knockback" : 40,
+	  "speed" : 150
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      }
+    }
+  },
+
+  "altAbilityType" : "omniammo",
+  
+  // ADDITIONAL ABILITY INSTANCES //
+  
+  "altAbility" : {
+    "stances" : {
+      "idle" : {
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      },
+      "switch" : {
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

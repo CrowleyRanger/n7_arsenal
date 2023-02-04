@@ -1,0 +1,8 @@
+{
+"input" : [  
+{ "item" : "money", "count" : 480 }	
+],
+"output" : { "item" : "migrantfleetpainting", "count" : 1 },
+"groups" : [ "citadelshop", "objects" ],
+"duration" : 1.2
+}

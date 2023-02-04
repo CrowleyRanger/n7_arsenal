@@ -1,0 +1,8 @@
+{
+"input" : [  
+{ "item" : "money", "count" : 360 }	
+],
+"output" : { "item" : "n7a_cargocrate", "count" : 1 },
+"groups" : [ "citadelshop", "objects" ],
+"duration" : 1.2
+}

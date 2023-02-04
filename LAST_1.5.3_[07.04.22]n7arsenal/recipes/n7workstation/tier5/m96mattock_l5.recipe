@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "m96mattock_l4", "count" : 1 },
+{ "item" : "refinedaegisalt", "count" : 6 },
+{ "item" : "elementzero", "count" : 2 }
+],
+"output" : { "item" : "m96mattock_l5", "count" : 1 },
+"groups" : [ "n7workstation", "n7workstationtier5" ],
+"duration" : 2
+}

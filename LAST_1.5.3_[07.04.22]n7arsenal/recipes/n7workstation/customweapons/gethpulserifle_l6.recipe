@@ -1,0 +1,13 @@
+{
+"input" : [
+{ "item" : "solariumstar", "count" : 6 },
+{ "item" : "elementzero", "count" : 5 },
+{ "item" : "wire", "count" : 10 },
+{ "item" : "siliconboard", "count" : 5 },
+{ "item" : "electronicgoods", "count" : 20 }
+
+],
+"output" : { "item" : "gethpulserifle_l6", "count" : 1 },
+"groups" : [ "n7workstation", "n7customweapons" ],
+"duration" : 2
+}

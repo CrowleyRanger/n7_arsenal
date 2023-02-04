@@ -1,0 +1,8 @@
+{
+"input" : [  
+{ "item" : "money", "count" : 240 }	
+],
+"output" : { "item" : "n7logochrome", "count" : 1 },
+"groups" : [ "n7supplybox", "objects" ],
+"duration" : 1.2
+}

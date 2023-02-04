@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "solariumstar", "count" : 12 },
+{ "item" : "durasteelbar", "count" : 6 },
+{ "item" : "elementzero", "count" : 5 }
+],
+"output" : { "item" : "particlerifle_l6", "count" : 1 },
+"groups" : [ "n7workstation", "n7customweapons" ],
+"duration" : 2
+}

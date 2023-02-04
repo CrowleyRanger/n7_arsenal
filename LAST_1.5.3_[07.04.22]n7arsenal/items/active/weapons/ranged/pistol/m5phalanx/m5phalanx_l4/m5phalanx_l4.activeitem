@@ -1,0 +1,131 @@
+{
+  "itemName" : "m5phalanx_l4",
+  "price" : 320,
+  "inventoryIcon" : "m5phalanx_l4icon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A reliable, accurate sidearm. Manufactured by Elanus Risk Control, the Predator is valued as a powerful, deadly, and relatively inexpensive weapon.",
+  "shortdescription" : "M-5 Phalanx IV",
+  "tooltipKind" : "gun",
+  "level" : 4,
+  "category" : "uniqueWeapon",
+  "itemTags" : ["weapon","ranged","pistol"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "/items/active/weapons/ranged/pistol/m5phalanx/m5phalanx.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash10.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.4, 0.125],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+        "partStates" : {
+          "middle" : {
+            "idle" : {
+              "properties" : {
+                "image" : "/items/active/weapons/ranged/pistol/m5phalanx/m5phalanx_l4/m5phalanx_l4fullbright.png:<frame><paletteSwaps>"
+              }
+            }
+          }
+        }
+      }}
+    },
+	"sounds" : {
+      "fire" : ["/sfx/gun/m5phalanx/m5phalanx.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 0, 120]
+      }
+    }
+  },
+  
+// ================ LIGHT SIGHT
+  
+  "animationScripts" : [
+    "/items/active/effects/laserbeam.lua"
+  ],
+  "scriptedAnimationParameters" : {
+    "beams" : [
+      {
+        "offset" : [1.28, 0.12],
+        "color" : [40, 20, 255, 128],
+        "length" : 40,
+        "segments" : 6,
+        "angle" : 0
+      }
+    ]
+  },
+
+  "baseOffset" : [0.4, 0.125],
+  "muzzleOffset" : [1, 0.22],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.6,
+    "baseDps" : 10,
+    "energyUsage" : 45,
+    "inaccuracy" : 0,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "thermalbullet",
+    "projectileParameters" : {},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.025,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  
+}

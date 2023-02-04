@@ -1,0 +1,162 @@
+{
+  "itemName" : "m92mantis_l3",
+  "price" : 300,
+  "inventoryIcon" : "m92mantis_l3icon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "Manufactured by Devlon Industries, the Mantis is primarily used by police and planetary militia groups.",
+  "shortdescription" : "M-92 Mantis III",
+  "level" : 3,
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "itemTags" : ["weapon","ranged","rifle"],
+  "twoHanded" : true,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "/items/active/weapons/ranged/sniperrifle/m92mantis/m92mantis.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash7.png"
+  },
+  "animationCustom" : {
+ 	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [1.3, 0.4],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+          "partStates" : {
+            "ammoType" : {
+              "1" : {
+                "properties" : {
+                  "image" : "m92mantis_l3fullbright.png:thermal.<frame><paletteSwaps>"
+                }
+              },
+              "2" : {
+                "properties" : {
+                  "image" : "m92mantis_l3fullbright.png:incendiary.<frame><paletteSwaps>"
+                }
+              },
+              "3" : {
+                "properties" : {
+                  "image" : "m92mantis_l3fullbright.png:cryo.<frame><paletteSwaps>"
+                }
+              },
+              "4" : {
+                "properties" : {
+                  "image" : "m92mantis_l3fullbright.png:proton.<frame><paletteSwaps>"
+                }
+              },
+              "5" : {
+                "properties" : {
+                  "image" : "m92mantis_l3fullbright.png:toxic.<frame><paletteSwaps>"
+                }
+              }
+            }
+          }
+      }}
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/m92mantis/m92mantis.ogg" ]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 50, 120]
+      }
+    }
+  },
+
+  "baseOffset" : [1.2, 0.4],
+  "muzzleOffset" : [2.7, 0.055],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 2,
+    "baseDps" : 11.5,
+    "energyUsage" : 35,
+    "inaccuracy" : 0.005,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "sniperthermalbullet",
+    "projectileParameters" : {
+      "knockback" : 30,
+	  "speed" : 250
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+		"weaponOffset" : [-0.3, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+		"weaponOffset" : [-0.3, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbilityType" : "omniammo",
+  
+  // ADDITIONAL ABILITY INSTANCES // SNIPER THERMAL BULLET //
+  
+  "altAbility" : {
+    "ammoTypes" : [
+      {
+        "projectileType" : "n7a_sniperthermalbullet"
+      },
+      {
+        "projectileType" : "n7a_sniperincendiaryround"
+      },
+      {
+        "projectileType" : "n7a_snipercryoround"
+      },
+      {
+        "projectileType" : "n7a_sniperprotonround"
+      },
+      {
+        "projectileType" : "n7a_snipertoxicround"
+      }
+    ]
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

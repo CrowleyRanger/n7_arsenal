@@ -1,0 +1,58 @@
+{
+  "objectName" : "arcademasseffect",
+  "colonyTags" : ["electronic"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 135,
+  "lightColor" : [150, 215, 235],
+
+  "description" : "An arcade machine running a game called 'Mass Effect'.",
+  "shortdescription" : "Mass Effect Arcade Machine",
+  "race" : "generic",
+
+  "apexDescription" : "A space adventure game called Mass Effect. It feels familiar.",
+  "avianDescription" : "Never heard of this Mass Effect game. And yet...",
+  "floranDescription" : "Massss Effect spaceship game. Floran get achievement for sssmashing fourth wall.",
+  "glitchDescription" : "Determined. I will set the high score on this new Mass Effect video game.",
+  "humanDescription" : "Mass Effect? I can't say I've ever heard of this one. Must be old.",
+  "hylotlDescription" : "This Mass Effect game speaks to me on a spiritual level.",
+  "novakidDescription" : "Some kinda space adventure game called Mass Effect. I do that stuff in real life!",
+
+  "inventoryIcon" : "arcademasseffecticon.png",
+  "orientations" : [
+    {
+      "leftImage" : "arcademasseffectleft.png:<color>.<frame>",
+      "rightImage" : "arcademasseffectright.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "frames" : 2,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/scripts/npcToyObject.lua"],
+  "npcToy" : {
+    "influence" : [
+      "videogame",
+      "videogame",
+      "videogameComplete"
+    ],
+    "defaultReactions" : {
+      "videogame" : [
+        [1.0, "typing"]
+      ],
+      "videogameComplete" : [
+        [1.0, "smile"],
+        [1.0, "annoyed"],
+        [1.0, "punch"]
+      ]
+    },
+    "preciseStandPositionLeft" : [-1.5, 0.0],
+    "preciseStandPositionRight" : [1.5, 0.0],
+    "maxNpcs" : 1
+  },
+
+  "soundEffect" : "/sfx/objects/arcademachine.ogg"
+}

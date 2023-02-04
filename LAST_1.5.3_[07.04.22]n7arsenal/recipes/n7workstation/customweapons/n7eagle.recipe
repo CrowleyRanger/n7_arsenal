@@ -1,0 +1,9 @@
+{
+"input" : [
+{ "item" : "m5phalanx_l6", "count" : 1 },
+{ "item" : "elementzero", "count" : 2 }
+],
+"output" : { "item" : "n7eagle_l6", "count" : 1 },
+"groups" : [ "n7workstation", "n7customweapons" ],
+"duration" : 4
+}

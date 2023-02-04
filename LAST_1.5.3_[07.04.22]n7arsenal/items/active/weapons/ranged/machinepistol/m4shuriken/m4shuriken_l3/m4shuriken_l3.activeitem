@@ -1,0 +1,118 @@
+{
+  "itemName" : "m4shuriken_l3",
+  "price" : 300,
+  "inventoryIcon" : "m4shuriken_l3icon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "Manufactured by the Elkoss Combine, the Shuriken Machine Pistol fires six-round bursts with a high rate of fire.",
+  "shortdescription" : "M-4 Shuriken I",
+  "tooltipKind" : "gun",
+  "level" : 3,
+  "category" : "uniqueWeapon",
+  "itemTags" : ["weapon","ranged","pistol"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "/items/active/weapons/ranged/machinepistol/m4shuriken/m4shuriken.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash9.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.4, 0.125],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+        "partStates" : {
+          "middle" : {
+            "idle" : {
+              "properties" : {
+                "image" : "m4shuriken_l3fullbright.png:<frame><paletteSwaps>"
+              }
+            }
+          }
+        }
+      }}
+    },
+	"sounds" : {
+      "fire" : ["/sfx/gun/m4shuriken.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 0, 120]
+      }
+    }
+  },
+
+  "baseOffset" : [0.4, 0.125],
+  "muzzleOffset" : [1.2, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.1,
+    "baseDps" : 12,
+    "energyUsage" : 15,
+	"projectileCount" : 1,
+    "inaccuracy" : 0.05,
+
+	"burstCount" : 6,
+	"burstTime" : 0.05,
+    "fireType" : "burst",
+
+    "projectileType" : "smgthermalbullet",
+    "projectileParameters" : {
+		"speed" : 150
+	},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.025,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  
+}

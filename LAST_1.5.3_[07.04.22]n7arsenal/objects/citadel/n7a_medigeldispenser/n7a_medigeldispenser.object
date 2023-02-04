@@ -1,0 +1,53 @@
+{
+  "objectName" : "n7a_medigeldispenser",
+  "colonyTags" : ["storage"],
+  "rarity" : "Rare",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "description" : "Medi-gel (medical gel) is an all-purpose medicinal salve combining an anaesthetic and clotting agent.",
+  "shortdescription" : "Medi-gel Dispenser",
+  "race" : "generic",
+  "category" : "storage",
+  "price" : 80,
+  "printable" : false,
+  "lightColor" : [80, 0, 0],
+
+  "inventoryIcon" : "n7a_medigeldispensericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "n7a_medigeldispenser.png:<color>.<frame>", "fullbright" : true }, { "image" : "n7a_medigeldispenserlit.png" } ],
+      "direction" : "left",
+      "flipImages" : false,
+      
+      "lightPosition" : [-1, 1],
+
+      "imagePosition" : [-6, -5],
+      "frames" : 2,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "n7a_medigeldispenser.png:<color>.<frame>", "fullbright" : true }, { "image" : "n7a_medigeldispenserlit.png" } ],
+      "direction" : "right",
+      
+      "lightPosition" : [0, 1],
+
+      "imagePosition" : [-6, -5],
+      "frames" : 2,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "openSounds" : [ "/sfx/objects/metalbox_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/metalbox_close.ogg" ],
+  "slotCount" : 9,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+  
+}

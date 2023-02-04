@@ -1,0 +1,8 @@
+{
+"input" : [
+{ "item" : "m96mattock_l6", "count" : 1 }
+],
+"output" : { "item" : "cerberusharrier_l6", "count" : 1 },
+"groups" : [ "n7workstation", "n7customweapons" ],
+"duration" : 4
+}

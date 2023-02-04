@@ -1,0 +1,33 @@
+{
+  "objectName" : "kroganplush",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 50,
+
+  "description" : "A cute little krogan plush.",
+  "shortdescription" : "Krogan Plushie",
+  "race" : "hylotl",
+
+  "apexDescription" : "Their willingness to fight makes krogan a very frightening organisms. Luckly, this one is just a toy.",
+  "avianDescription" : "A toy of a creature with a built-in shield on its back. Curious...",
+  "floranDescription" : "Toy is orange. Iss creature a flower?",
+  "glitchDescription" : "Curious. I have never seen a real krogan.",
+  "humanDescription" : "A krogan! I like krogans.",
+  "hylotlDescription" : "The krogan are a truly heroic race, captured beautifully here in toy form.",
+  "novakidDescription" : "That ain't a real krogan, it's a fake.",
+
+  "inventoryIcon" : "kroganplushicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "kroganplush.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

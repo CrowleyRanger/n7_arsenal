@@ -1,0 +1,9 @@
+{
+"input" : [
+{ "item" : "m98widow_l6", "count" : 1 },
+{ "item" : "elementzero", "count" : 2 }
+],
+"output" : { "item" : "blackwidow_l6", "count" : 1 },
+"groups" : [ "n7workstation", "n7customweapons" ],
+"duration" : 4
+}

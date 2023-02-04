@@ -1,0 +1,8 @@
+{
+"input" : [  
+{ "item" : "money", "count" : 600 }	
+],
+"output" : { "item" : "citadelshop", "count" : 1 },
+"groups" : [ "n7supplybox", "objects" ],
+"duration" : 1.2
+}

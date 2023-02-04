@@ -1,0 +1,8 @@
+{
+"input" : [  
+{ "item" : "money", "count" : 1000 }	
+],
+"output" : { "item" : "quarianchest", "count" : 1 },
+"groups" : [ "citadelshop", "armour" ],
+"duration" : 1.2
+}

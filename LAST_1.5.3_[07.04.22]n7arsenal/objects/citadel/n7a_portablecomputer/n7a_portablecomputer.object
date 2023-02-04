@@ -1,0 +1,73 @@
+{
+  "objectName" : "n7a_portablecomputer",
+  "colonyTags" : ["electronic"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 180,
+  "lightColor" : [0, 60, 180],
+
+  "description" : "A portable computer manufactured on Earth.",
+  "shortdescription" : "Portable Computer",
+  "race" : "generic",
+  
+  "apexDescription" : "A computer.",
+  "avianDescription" : "A strange computer.",
+  "floranDescription" : "Floran has little use for thiss.",
+  "glitchDescription" : "Envious. A high-powered computer.",
+  "humanDescription" : "A sweet rig.",
+  "hylotlDescription" : "Other species' over reliance on technology saddens me.",
+  "novakidDescription" : "I betcha' this thing could look up anythin'!",
+
+  "inventoryIcon" : "n7a_portablecomputericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "n7a_portablecomputerleft.png:<color>.<frame>", "fullbright" : true }, { "image" : "n7a_portablecomputerleftlit.png:<color>.<frame>" } ],
+      "direction" : "left",
+      "flipImages" : false,
+      
+      "lightPosition" : [-1, 1],
+
+      "imagePosition" : [-6, 0],
+      "frames" : 4,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "n7a_portablecomputerright.png:<color>.<frame>", "fullbright" : true }, { "image" : "n7a_portablecomputerrightlit.png:<color>.<frame>" } ],
+      "direction" : "right",
+      
+      "lightPosition" : [0, 1],
+
+      "imagePosition" : [-6, 0],
+      "frames" : 4,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/scripts/npcToyObject.lua"],
+  "npcToy" : {
+    "influence" : [
+      "videogame",
+      "videogame",
+      "videogameComplete"
+    ],
+    "defaultReactions" : {
+      "videogame" : [
+        [1.0, "typing"]
+      ],
+      "videogameComplete" : [
+        [1.0, "smile"],
+        [1.0, "annoyed"],
+        [1.0, "punch"]
+      ]
+    },
+    "preciseStandPositionLeft" : [-1.5, 0.0],
+    "preciseStandPositionRight" : [1.5, 0.0],
+    "maxNpcs" : 1
+  }
+}

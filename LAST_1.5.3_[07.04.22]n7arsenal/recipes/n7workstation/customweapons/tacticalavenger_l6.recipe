@@ -1,0 +1,8 @@
+{
+"input" : [
+{ "item" : "m8avenger_l6", "count" : 1 }
+],
+"output" : { "item" : "tacticalavenger_l6", "count" : 1 },
+"groups" : [ "n7workstation", "n7customweapons" ],
+"duration" : 4
+}

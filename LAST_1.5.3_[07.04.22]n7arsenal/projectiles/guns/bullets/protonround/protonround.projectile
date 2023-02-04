@@ -1,0 +1,26 @@
+{
+  "projectileName" : "protonround",
+  "physics" : "laser",
+  "image" : "protonround.png",
+  "animationCycle" : 0.1,
+  "frameNumber" : 3,
+  "damageKind" : "electricbow",
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "timeToLive" : 10,
+  "pointLight" : true,
+  "fullbright" : true,
+  "lightColor" : [50, 15, 100],
+  "power" : 5.0,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "speed" : 100,
+  "statusEffects" : [
+    "electrified"
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/n7a_protonroundexplosion/n7a_protonroundexplosion.config"
+    }
+  ]
+}

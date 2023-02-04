@@ -1,0 +1,32 @@
+{
+  "objectName" : "migrantfleetpainting",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Rare",
+  "description" : "A painting contemplating the Migrant Fleet, featuring a quarian admiral!",
+  "shortdescription" : "Migrant Fleet Painting",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 240,
+  "printable" : false,
+
+  "apexDescription" : "The Flotilla and a quarian admiral. This is really inspiring!",
+  "avianDescription" : "Are they the quarians? Wow, I've never seen one of them...",
+  "floranDescription" : "The Flotilla and a quarian admiral. This isss inspiring!",
+  "glitchDescription" : "The Migrant Fleet, also known as Flotilla, and a quarian admiral, maybe Shala'Raan vas Tonbay?",
+  "humanDescription" : "The Flotilla and a quarian admiral. This is really inspiring!",
+  "hylotlDescription" : "The Flo... Flotilla? I've never heard of it...",
+  "novakidDescription" : "The Flo... Flotilla? I've never heard of it...",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "migrantfleetposter.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

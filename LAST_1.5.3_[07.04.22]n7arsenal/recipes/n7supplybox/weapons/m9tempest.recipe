@@ -1,0 +1,8 @@
+{
+"input" : [
+{ "item" : "money", "count" : 560 }
+],
+"output" : { "item" : "m9tempest", "count" : 1 },
+"groups" : [ "n7supplybox", "weapons", "all" ],
+"duration" : 1.2
+}

@@ -1,0 +1,162 @@
+{
+  "itemName" : "n7crusader_l6",
+  "price" : 600,
+  "inventoryIcon" : "n7crusader_l6icon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Bruised and bloody Alliance marines on Torfan attributed their survival against waves of batarian mercenaries to the precision and stopping power of the Crusader.Bruised and bloody Alliance marines on Torfan attributed their survival against waves of batarian mercenaries to the precision and stopping power of the Crusader.",
+  "shortdescription" : "^#FF0000;N7 Crusader^white;",
+  "level" : 6,
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "tooltipKind" : "gun",
+  "itemTags" : ["weapon","ranged","shotgun"],
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "middle" : "n7crusader_l6.png",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash5.png"
+  },
+  "animationCustom" : {
+ 	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.0, 0.0],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+          "partStates" : {
+            "ammoType" : {
+              "1" : {
+                "properties" : {
+                  "image" : "n7crusader_l6fullbright.png:thermal.<frame><paletteSwaps>"
+                }
+              },
+              "2" : {
+                "properties" : {
+                  "image" : "n7crusader_l6fullbright.png:incendiary.<frame><paletteSwaps>"
+                }
+              },
+              "3" : {
+                "properties" : {
+                  "image" : "n7crusader_l6fullbright.png:cryo.<frame><paletteSwaps>"
+                }
+              },
+              "4" : {
+                "properties" : {
+                  "image" : "n7crusader_l6fullbright.png:proton.<frame><paletteSwaps>"
+                }
+              },
+              "5" : {
+                "properties" : {
+                  "image" : "n7crusader_l6fullbright.png:toxic.<frame><paletteSwaps>"
+                }
+              }
+            }
+          }
+      }}
+    },
+    "sounds" : {
+      "fire" : ["/sfx/gun/n7crusader.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 100, 220]
+      }
+    }
+  },
+
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [1.6, 0.3],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.5,
+    "baseDps" : 10,
+    "energyUsage" : 55,
+    "projectileCount" : 5,
+    "inaccuracy" : 0.04,
+    "fireType" : "auto",
+
+    "projectileType" : "thermalbullet",
+    "projectileParameters" : {
+      "knockback" : 40,
+	  "speed" : 200
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+		"weaponOffset" : [-0.25, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+		"weaponOffset" : [-0.25, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      }
+    }
+  },
+
+  "altAbilityType" : "omniammo",
+  
+  // ADDITIONAL ABILITY INSTANCES //
+  
+  "altAbility" : {
+    "stances" : {
+      "idle" : {
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      },
+      "switch" : {
+		"frontArmFrame" : "jump.1",
+		"backArmFrame" : "rotation"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

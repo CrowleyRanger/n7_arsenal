@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "m8avenger_l2", "count" : 1 },
+{ "item" : "titaniumbar", "count" : 6 },
+{ "item" : "elementzero", "count" : 2 }
+],
+"output" : { "item" : "m8avenger_l3", "count" : 1 },
+"groups" : [ "n7workstation", "n7workstationtier3" ],
+"duration" : 2
+}

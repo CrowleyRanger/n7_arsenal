@@ -1,0 +1,8 @@
+{
+"input" : [  
+{ "item" : "money", "count" : 4800 }	
+],
+"output" : { "item" : "n7a_ut47kodiakstorage", "count" : 1 },
+"groups" : [ "citadelshop", "objects" ],
+"duration" : 1.2
+}

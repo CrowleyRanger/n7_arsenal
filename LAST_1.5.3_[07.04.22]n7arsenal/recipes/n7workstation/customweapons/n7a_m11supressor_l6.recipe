@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "solariumstar", "count" : 8 },
+{ "item" : "durasteelbar", "count" : 4 },
+{ "item" : "elementzero", "count" : 4 }
+],
+"output" : { "item" : "n7a_m11supressor_l6", "count" : 1 },
+"groups" : [ "n7workstation", "n7customweapons" ],
+"duration" : 2
+}

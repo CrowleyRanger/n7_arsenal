@@ -1,0 +1,15 @@
+{
+  "itemName" : "n7a_capacitorhelmet",
+  "price" : 250,
+  "inventoryIcon" : "headicon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "Stores microcapacitors in its structure to replenish spent kinetic barriers.",
+  "shortdescription" : "Capacitor Helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+}

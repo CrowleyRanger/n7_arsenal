@@ -1,0 +1,23 @@
+{
+  "projectileName" : "n7a_sniperthermalbullet",
+  "image" : "n7a_sniperthermalbullet.png",
+  
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKind" : "standardbullet",
+  "pointLight" : true,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/n7a_thermalbulletexplosion/n7a_thermalbulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 150,
+  "knockback" : 1,
+  "lightColor" : [15, 65, 95],
+  "fullbright" : true
+}

@@ -1,0 +1,159 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "n7workstation",
+        "states" : {
+          "n7workstation" : {
+            "frames" : 1,
+            "cycle" : 1,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
+          },
+          "n7workstation2" : {
+            "frames" : 1,
+            "cycle" : 1,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
+          },
+          "n7workstation3" : {
+            "frames" : 1,
+            "cycle" : 1,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
+          },
+		  "n7workstation4" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
+          },
+		  "n7workstation5" : {
+            "frames" : 12,
+            "cycle" : 1.3,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "chassis" : {
+        "properties" : {
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "n7workstation" : {
+              "properties" : {
+                "image" : "n7workstationlit.png:<color>.<frame>"
+              }
+            },
+
+            "n7workstation2" : {
+              "properties" : {
+                "image" : "n7workstation2lit.png:<color>.<frame>"
+              }
+            },
+
+            "n7workstation3" : {
+              "properties" : {
+                "image" : "n7workstation3lit.png:<color>.<frame>"
+              }
+            },
+			
+			"n7workstation4" : {
+              "properties" : {
+                "image" : "n7workstation4lit.png:<color>.<frame>"
+              }
+            },
+			
+			"n7workstation5" : {
+              "properties" : {
+                "image" : "n7workstation5lit.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "light" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "n7workstation" : {
+              "properties" : {
+                "image" : "n7workstation.png:<color>.<frame>"
+              }
+            },
+
+            "n7workstation2" : {
+              "properties" : {
+                "image" : "n7workstation2.png:<color>.<frame>"
+              }
+            },
+
+            "n7workstation3" : {
+              "properties" : {
+                "image" : "n7workstation3.png:<color>.<frame>"
+              }
+            },
+			
+			"n7workstation4" : {
+              "properties" : {
+                "image" : "n7workstation4.png:<color>.<frame>"
+              }
+            },
+			
+			"n7workstation5" : {
+              "properties" : {
+                "image" : "n7workstation5.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/me1_event5.ogg"],
+    "fanfare2" : ["/sfx/cinematics/me1_event1.ogg"]
+  },
+
+  "lights" : {
+    "scifiglow" : {
+      "active" : false,
+      "position" : [0, 2],
+      "color" : [76, 125, 153],
+      "flickerPeriod" : 0.8,
+      "flickerMinIntensity" : 0.95,
+      "flickerMaxIntensity" : 1.0,
+      "flickerPeriodVariance" : 0.0,
+      "flickerIntensityVariance" : 0.0
+    }
+  },
+  
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

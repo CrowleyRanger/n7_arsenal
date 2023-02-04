@@ -1,0 +1,173 @@
+[ 
+	// crafting tables
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7supplybox"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7workstation"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"citadelshop"} },
+	
+	// items
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"elementzero"} },
+	
+	// weapons
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m8avenger"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m8avenger_l2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m8avenger_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m8avenger_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m8avenger_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m8avenger_l6"} },
+
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m5phalanx"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m5phalanx_l2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m5phalanx_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m5phalanx_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m5phalanx_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m5phalanx_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_m6carnifex_l2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_m6carnifex_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_m6carnifex_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_m6carnifex_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_m6carnifex_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m3predator"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m3predator_l2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m3predator_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m3predator_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m3predator_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m3predator_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m9tempest"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m9tempest_l2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m9tempest_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m9tempest_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m9tempest_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m9tempest_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m25hornet_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m25hornet_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m25hornet_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m25hornet_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m12locust_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m12locust_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m12locust_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m12locust_l6"} },
+
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m4shuriken_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m4shuriken_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m4shuriken_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m4shuriken_l6"} },
+
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m15vindicator"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m15vindicator_l2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m15vindicator_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m15vindicator_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m15vindicator_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m15vindicator_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m98widow_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m98widow_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m98widow_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m76revenant_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m76revenant_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m76revenant_l6"} },
+
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m300claymore_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m300claymore_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m300claymore_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m27scimitar"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m27scimitar_l2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m27scimitar_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m27scimitar_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m27scimitar_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m27scimitar_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m92mantis"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m92mantis_l2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m92mantis_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m92mantis_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m92mantis_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m92mantis_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_m97viper_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_m97viper_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_m97viper_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_m97viper_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m96mattock_l2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m96mattock_l3"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m96mattock_l4"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m96mattock_l5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"m96mattock_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7crusader_l6"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7valiant_l6"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7eagle_l6"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7valkyrie_l6"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7hurricane_l6"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7piranha_l6"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"tacticalavenger_l6"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"blackwidow_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"gethpulserifle_l6"} },
+
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"particlerifle_l6"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"cerberusharrier_l6"} },
+
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_m11supressor_l6"} },
+	
+	// objects
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_purgatory"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"afterlife1"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"afterlife2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"kroganplush"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"havarlplant"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"migrantfleetpainting"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7logo"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7logochrome"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"arcademasseffect"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"ssvnormandymodel"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"turianfrigatemodel"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_quarianfrigatemodel"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_systemsalliancefrigatemodel"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"systemsalliancelogo"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"systemsalliancelogochrome"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_portablecomputer"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_medigeldispenser"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_ut47kodiakstorage"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_ammocrate"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_cargocrate"} },
+	// armors
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7breatherhelmet"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7helmet"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7chestplate"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7greaves"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7pathfinderhelmet"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7pathfinderarmoredhelmet"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_foldedweapons1"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_foldedweapons2"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_foldedweapons3"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"quarianhelmet"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"quarianchest"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"quarianpants"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"turianhelmet"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"turianchestplate"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"turiangreaves"} },
+	
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7hoodie"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"reconhood"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"kuwashiivisor"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_deathmask"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_kestrelhelmet"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_umbravisor"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_capacitorhelmet"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_casualtshirt"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_casualpants"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_systemsalliancepilothelmet"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"n7a_systemsalliancemarinehelmet"} }
+]

@@ -1,0 +1,55 @@
+{
+  "objectName" : "n7a_ut47kodiakstorage",
+  "colonyTags" : ["storage"],
+  "rarity" : "Rare",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "description" : "A legendary UT-47 Kodiak Drop Shuttle! Well... At the moment this one fits well as a good storage...",
+  "shortdescription" : "Grounded UT-47 Kodiak",
+  "race" : "generic",
+  "category" : "storage",
+  "price" : 1080,
+  "lightColor" : [18, 27, 31],
+  
+  "health" : 10,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "n7a_ut47kodiakstorage.png:<color>.<key>", "fullbright" : true }, { "image" : "n7a_ut47kodiakstoragelit.png:<color>.<key>" } ],
+      "flipImages" : true,
+      "direction" : "left",
+      
+      "lightPosition" : [-1, 1],
+
+      "imagePosition" : [-95, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "n7a_ut47kodiakstorage.png:<color>.<key>", "fullbright" : true }, { "image" : "n7a_ut47kodiakstoragelit.png:<color>.<key>" } ],
+      "flipImages" : false,
+	  "direction" : "right",
+      
+      "lightPosition" : [0, 1],
+
+      "imagePosition" : [-95, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "openSounds" : [ "/sfx/objects/gunchest_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/gunchest_close.ogg" ],
+  "slotCount" : 64,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 8,
+  "autoCloseCooldown" : 3600
+
+}

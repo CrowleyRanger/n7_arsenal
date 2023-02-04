@@ -1,0 +1,9 @@
+{
+"input" : [
+{ "item" : "elementzero", "count" : 2 },
+{ "item" : "money", "count" : 720 }
+],
+"output" : { "item" : "m27scimitar", "count" : 1 },
+"groups" : [ "n7supplybox", "weapons", "all" ],
+"duration" : 1.2
+}

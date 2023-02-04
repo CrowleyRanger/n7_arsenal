@@ -1,0 +1,86 @@
+{
+  "objectName" : "afterlife2",
+  "colonyTags" : ["electronic","musical"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 160,
+  "lightColor" : [0, 53, 100],
+  
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.1,
+  "flickerIntensityVariance" : 0.0,
+
+  "description" : "Afterlife upper levels music. Aria T'Loak's second favourite music!",
+  "shortdescription" : "Club Deck: Afterlife II",
+ 
+  "apexDescription" : "This music makes me want to dance!",
+  "avianDescription" : "What is that terrible noise?",
+  "floranDescription" : "This music make Floran want to move hipsss!",
+  "glitchDescription" : "Negative. This music is not pleasant.",
+  "humanDescription" : "Wow, I remember that! It's... From Afterlife in Omega! Unfortunately, everytime I go there they don't let me in...",
+  "hylotlDescription" : "This is a really popular club song.",
+  "novakidDescription" : "Ain't heard anythin' like this before. Not sure it's my kinda tune.",
+
+  "inventoryIcon" : "afterlife2icon.png",
+  "orientations" : [
+    {
+      "image" : "afterlife2.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "afterlife2.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "afterlife2.animation",
+  "animationParts" : {
+    "bg" : "afterlife2.png",
+    "fg" : "afterlife2slit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/recordscratch2.ogg" ],
+      "off" : [ "/sfx/objects/recordscratch1.ogg" ]
+    }
+  },
+  "animationPosition" : [-16, 0],
+
+  "scripts" : [
+    "/objects/wired/light/light.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ],
+
+  "npcToy" : {
+    "influence" : [
+      "music",
+      "music",
+      "music",
+      "musicFinished"
+    ],
+    "defaultReactions" : {
+      "musicFinished" : [
+        [1.0, "smile"],
+        [1.0, "laugh"]
+      ]
+    },
+    "randomStandXRange" : [-8, 8]
+  },
+
+  "soundEffect" : "/sfx/objects/n7a_afterlife2.ogg"
+}

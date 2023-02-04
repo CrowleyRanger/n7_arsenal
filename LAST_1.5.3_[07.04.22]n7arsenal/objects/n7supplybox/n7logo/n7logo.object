@@ -1,0 +1,33 @@
+{
+  "objectName" : "n7logo",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 70,
+
+  "shortdescription" : "N7 Logo",
+  "description" : "N7 is a vocational code in the Systems Alliance military.",
+  "race" : "human",
+
+  "apexDescription" : "N7, a powerful special force from Earth!",
+  "avianDescription" : "N7, a powerful special force from Earth!",
+  "floranDescription" : "N7, they really know how to fight!",
+  "glitchDescription" : "N7, a special force from Earth!",
+  "humanDescription" : "N7, they are the best in all galaxy!",
+  "hylotlDescription" : "N7, a very honored military force from Earth!",
+  "novakidDescription" : "N7 marines have a good aim, but not like the novakids!",
+
+  "inventoryIcon" : "n7logoicon.png",
+  "orientations" : [
+    {
+      "image" : "n7logo.png:<color>",
+      "imagePosition" : [-17, -7],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

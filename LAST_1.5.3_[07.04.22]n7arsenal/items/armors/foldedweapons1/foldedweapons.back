@@ -1,0 +1,14 @@
+{
+  "itemName" : "n7a_foldedweapons1",
+  "price" : 300,
+  "inventoryIcon" : "backicon.png",
+  "rarity" : "Rare",
+  "category" : "backwear",
+  "description" : "Weapons ready for combat!",
+  "shortdescription" : "Folded Weapons",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+  "maxStack" : 1
+}

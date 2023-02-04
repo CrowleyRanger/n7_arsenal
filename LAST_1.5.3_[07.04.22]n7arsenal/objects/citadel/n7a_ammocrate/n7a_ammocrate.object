@@ -1,0 +1,58 @@
+{
+  "objectName" : "n7a_ammocrate",
+  "colonyTags" : ["storage"],
+  "rarity" : "Rare",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "price" : 110,
+  "lightColor" : [50, 50, 50],
+
+  "description" : "Designed to fit almost every kind of ammo clips from the Milky Way Galaxy.",
+  "shortdescription" : "Ammo Crate",
+  "race" : "generic",
+  
+  "health" : 1.5,
+  
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "n7a_ammocrate.png:<color>", "fullbright" : true }, { "image" : "n7a_ammocratelit.png:<color>" } ],
+      "flipImages" : true,
+      "direction" : "left",
+      
+      "lightPosition" : [-1, 1],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
+    },
+    {
+      "imageLayers" : [ { "image" : "n7a_ammocrate.png:<color>", "fullbright" : true }, { "image" : "n7a_ammocratelit.png:<color>" } ],
+      "flipImages" : false,
+	  "direction" : "right",
+      
+      "lightPosition" : [0, 1],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+	  "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_medium_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_medium_open.ogg" ],
+  "slotCount" : 24,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+  
+}

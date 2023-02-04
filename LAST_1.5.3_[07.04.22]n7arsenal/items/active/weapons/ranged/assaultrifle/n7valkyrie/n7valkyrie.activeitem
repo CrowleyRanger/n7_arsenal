@@ -1,0 +1,144 @@
+{
+  "itemName" : "n7valkyrie_l6",
+  "price" : 100,
+  "inventoryIcon" : "n7valkyrieicon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A variation of the popular Avenger design, the Valkyrie is now standard issue for new recruits.",
+  "shortdescription" : "^#FF0000;N7 Valkyrie^white;",
+  "level" : 6,
+  "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "twoHanded" : true,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : { 
+	"butt" : "",
+    "middle" : "n7valkyrie.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/muzzleflash/muzzleflash1.png"
+  },
+  "animationCustom" : { 
+	"animatedParts" : { "stateTypes" : { "middle" : {
+      "default" : "idle",
+      "states" : {
+        "idle" : {
+          "frames" : 1,
+          "mode" : "loop"
+        }
+      }}},
+      "parts" : { "middlefullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.6, 0.3],
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true
+        },
+          "partStates" : {
+            "ammoType" : {
+              "1" : {
+                "properties" : {
+                  "image" : "n7valkyriefullbright.png:thermal.<frame><paletteSwaps>"
+                }
+              },
+              "2" : {
+                "properties" : {
+                  "image" : "n7valkyriefullbright.png:incendiary.<frame><paletteSwaps>"
+                }
+              },
+              "3" : {
+                "properties" : {
+                  "image" : "n7valkyriefullbright.png:cryo.<frame><paletteSwaps>"
+                }
+              },
+              "4" : {
+                "properties" : {
+                  "image" : "n7valkyriefullbright.png:proton.<frame><paletteSwaps>"
+                }
+              },
+              "5" : {
+                "properties" : {
+                  "image" : "n7valkyriefullbright.png:toxic.<frame><paletteSwaps>"
+                }
+              }
+            }
+          }
+      }}
+    },
+	"sounds" : {
+      "fire" : ["/sfx/gun/n7valkyrie.ogg"]
+    },
+	"lights" : {
+      "muzzleFlash" : {
+        "color" : [0, 0, 120]
+      }
+    }
+  },
+  
+  "baseOffset" : [0.6, 0.3],
+  "muzzleOffset" : [2.1, -0.1],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.3,
+    "baseDps" : 15,
+    "energyUsage" : 50,
+	"projectileCount" : 1,
+    "inaccuracy" : 0.02,
+
+	"burstCount" : 2,
+	"burstTime" : 0.1,
+    "fireType" : "burst",
+
+    "projectileType" : "thermalbullet",
+    "projectileParameters" : {
+		"speed" : 200,
+		"knockback" : 1
+	},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+		"weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+		"weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbilityType" : "omniammo",
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  
+}

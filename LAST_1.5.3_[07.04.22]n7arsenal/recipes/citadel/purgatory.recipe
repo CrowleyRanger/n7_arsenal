@@ -1,0 +1,8 @@
+{
+"input" : [  
+{ "item" : "money", "count" : 1000 }	
+],
+"output" : { "item" : "n7a_purgatory", "count" : 1 },
+"groups" : [ "citadelshop", "objects" ],
+"duration" : 1.2
+}

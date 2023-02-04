@@ -1,0 +1,59 @@
+{
+  "objectName" : "n7a_systemsalliancefrigatemodel",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Rare",
+  "description" : "A very detailed model of a Systems Alliance frigate!",
+  "shortdescription" : "Systems Alliance Frigate Model",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 1000,
+  "printable" : false,
+  "lightColor" : [0, 60, 180],
+
+  "flickerPeriod" : 0.8,
+  "flickerMinIntensity" : 0.7,
+  "flickerMaxIntensity" : 0.8,
+  "flickerPeriodVariance" : 0.1,
+  "flickerIntensityVariance" : 0.0,
+
+  "apexDescription" : "A human starship, nice!",
+  "avianDescription" : "Is that a human starship?",
+  "floranDescription" : "What a nice ssssstarship design!",
+  "glitchDescription" : "A human frigate!",
+  "humanDescription" : "This frigate makes us proud of humanity",
+  "hylotlDescription" : "An human starship model!",
+  "novakidDescription" : "A human starship, nice!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "n7a_systemsalliancefrigatemodel.png:<color>.<frame>", "fullbright" : true }, { "image" : "n7a_systemsalliancefrigatemodellit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.8,
+      
+      "lightPosition" : [6,1],
+      
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "n7a_systemsalliancefrigatemodel.png:<color>.<frame>", "fullbright" : true }, { "image" : "n7a_systemsalliancefrigatemodellit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.8,
+      
+      "lightPosition" : [6,1],
+      
+      "direction" : "right",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

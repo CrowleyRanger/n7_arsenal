@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "solariumstar", "count" : 6 },
+{ "item" : "elementzero", "count" : 4 },
+{ "item" : "money", "count" : 4200 }
+],
+"output" : { "item" : "n7valiant_l6", "count" : 1 },
+"groups" : [ "n7workstation", "n7customweapons" ],
+"duration" : 2
+}

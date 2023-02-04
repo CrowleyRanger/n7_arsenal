@@ -1,0 +1,25 @@
+{
+  "objectName" : "systemsalliancelogo",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 70,
+
+  "shortdescription" : "Systems Alliance Logo",
+  "description" : "The Systems Alliance is the representative body of Earth and all human colonies in Citadel space.",
+  "race" : "human",
+
+  "inventoryIcon" : "systemsalliancelogoicon.png",
+  "orientations" : [
+    {
+      "image" : "systemsalliancelogo.png:<color>",
+      "imagePosition" : [-17, -7],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

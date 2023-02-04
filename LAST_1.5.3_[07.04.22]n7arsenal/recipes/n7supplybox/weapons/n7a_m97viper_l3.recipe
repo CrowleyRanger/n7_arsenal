@@ -1,0 +1,10 @@
+{
+"input" : [
+{ "item" : "titaniumbar", "count" : 6 },
+{ "item" : "elementzero", "count" : 2 },
+{ "item" : "money", "count" : 880 }
+],
+"output" : { "item" : "n7a_m97viper_l3", "count" : 1 },
+"groups" : [ "n7supplybox", "weapons", "all" ],
+"duration" : 1.2
+}

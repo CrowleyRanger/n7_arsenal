@@ -1,0 +1,27 @@
+{
+  "projectileName" : "incendiaryround",
+  "physics" : "laser",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/n7a_incendiaryroundexplosion/n7a_incendiaryroundexplosion.config"
+    }
+  ],
+  "image" : "incendiaryround.png",
+  "animationCycle" : 0.25,
+  "fullbright" : true,
+  "lightColor" : [100, 20, 2],
+  "frameNumber" : 1,
+  "emitters" : [ "flamesfast" ],
+  "damageKind" : "firebow",
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "power" : 5.0,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "speed" : 100,
+  "timeToLive" : 20,
+  "pointLight" : true,
+  "statusEffects" : [
+    "burning"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "itemName" : "n7a_systemsalliancepilothelmet",
+  "price" : 250,
+  "inventoryIcon" : "headicon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "headwear",
+  "description" : "Comes standard with a suite of communication, navigation, and battlefield awareness software.",
+  "shortdescription" : "Systems Alliance Pilot Helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png"
+}
